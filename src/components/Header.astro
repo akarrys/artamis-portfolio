@@ -8,76 +8,79 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
 
 <header
   id="header"
-  class="fixed top-0 left-0 right-0 z-50 block transition-all duration-300"
+  class="fixed top-0 left-0 right-0 z-50 block bg-white/90 backdrop-blur-sm transition-all duration-300"
 >
-  <nav class="max-w-7xl mx-auto px-8 py-4">
-    <ul class="flex items-center gap-4 justify-center text-sm overflow-x-auto whitespace-nowrap"></ul>
+  <nav class="max-w-7xl mx-auto px-4 md:px-8 py-2 md:py-4">
+    <ul class="flex flex-wrap items-center justify-center gap-2 text-xs md:text-base list-none">
       <li>
         <a
           href="#about"
-          class="text-gray-700 hover:text-black transition-colors font-medium"
+          class="text-xs md:text-base text-gray-700 hover:text-black transition-colors font-medium px-2 py-1"
         >
           About
         </a>
       </li>
+
       {
         hasProjects && (
           <li>
             <a
               href="#projects"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
+              class="text-xs md:text-base text-gray-700 hover:text-black transition-colors font-medium px-2 py-1"
             >
               Projects
             </a>
           </li>
         )
       }
+
       {
         hasExperience && (
           <li>
             <a
               href="#experience"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
+              class="text-xs md:text-base text-gray-700 hover:text-black transition-colors font-medium px-2 py-1"
             >
               Experience
             </a>
           </li>
         )
       }
+
       {
         hasEducation && (
           <li>
             <a
               href="#education"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
+              class="text-xs md:text-base text-gray-700 hover:text-black transition-colors font-medium px-2 py-1"
             >
               Education
             </a>
           </li>
         )
       }
+
       <li>
-  <a
-    href="/resume.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="text-gray-700 hover:text-black transition-colors font-medium"
-  >
-    Resume
-  </a>
-</li>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-xs md:text-base text-gray-700 hover:text-black transition-colors font-medium px-2 py-1"
+        >
+          Resume
+        </a>
+      </li>
 
-<li>
-  <a
-    href="https://github.com/akarrys"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="text-gray-700 hover:text-black transition-colors font-medium"
-  >
-    GitHub
-  </a>
-</li>
-
+      <li>
+        <a
+          href="https://github.com/akarrys"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-xs md:text-base text-gray-700 hover:text-black transition-colors font-medium px-2 py-1"
+        >
+          GitHub
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
