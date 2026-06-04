@@ -35,13 +35,22 @@ export const siteConfig = {
     skills: ["Malware Analysis", "Procmon", "Process Explorer", "Wireshark"]
   },
 
-  {
-    name: "Quasar RAT Analysis",
-    description:
-      "Performed dynamic malware analysis using Process Monitor, Event Viewer, Process Explorer, and network monitoring tools to identify persistence and execution behaviors.",
-    link: "#",
-    skills: ["Threat Hunting", "Windows Internals", "Malware Analysis"]
-  },
+    {
+  name: "Quasar RAT Malware Analysis",
+  description:
+    "Performed dynamic malware analysis of a suspected Quasar RAT sample in an isolated Windows VM. Identified scheduled task persistence, AppData execution, suspicious outbound network activity, unsigned executable behavior, and extracted IOCs mapped to MITRE ATT&CK.",
+  link: "https://github.com/akarrys/quasar-rat-malware-analysis",
+  skills: [
+    "Malware Analysis",
+    "Threat Hunting",
+    "Wireshark",
+    "Procmon",
+    "Process Explorer",
+    "PowerShell",
+    "IOC Analysis",
+    "MITRE ATT&CK"
+  ]
+},
 
   {
     name: "Wireless Network Attack Analysis",
